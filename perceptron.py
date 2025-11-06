@@ -64,7 +64,7 @@ for eta in n: #iterates over n
             correct = 0
             total = len(y_test)
             for(x_testSample, y_testSample) in zip(X_test, y_test):
-                y_pred = clf.predict([x_testSample])[0]
+                y_pred = clf.predict([x_testSample])
                 if y_pred == y_testSample:
                     correct += 1
             accuracy = correct / total
